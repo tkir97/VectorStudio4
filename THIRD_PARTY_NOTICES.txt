@@ -1,0 +1,11 @@
+Vector Editor — Shape Builder topology dependency
+
+JSTS 2.12.1
+Project: https://github.com/bjornharrtell/jsts
+License: EDL-1.0 OR EPL-1.0
+
+This build uses the classic JSTS browser bundle from cdnjs:
+https://cdnjs.cloudflare.com/ajax/libs/jsts/2.12.1/jsts.min.js
+
+JSTS is used only for Shape Builder planar noding, polygonization and union.
+Paper.js remains used elsewhere in the editor and for Shape Builder result rendering.

@@ -1,0 +1,123 @@
+{
+  "name": "Vector Studio Modular Baseline",
+  "baseline_id": "vector-studio-bitmap-panel-v96",
+  "javascript_architecture": "ordered classic-script feature modules; shared legacy global lexical scope",
+  "source": "consolidated-regression-recovery baseline",
+  "module_count": 14,
+  "files": [
+    {
+      "path": "ARCHITECTURE.md",
+      "bytes": 2359,
+      "sha256": "90be31693c5a6dd871e83e9fd27988acda27454d5b43bfeb48d1fa13d8aa1982"
+    },
+    {
+      "path": "BASELINE_CHECKLIST.md",
+      "bytes": 1902,
+      "sha256": "1d66d7f48f0588709da23f6f2cad5edf6cf1ff9a3701060380c1c68aa739b66b"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.txt",
+      "bytes": 428,
+      "sha256": "a2aeec35944a2b08b9c4c49c388f8d572e385481f16fbd97b81df61e2bb58f26"
+    },
+    {
+      "path": "index.html",
+      "bytes": 117972,
+      "sha256": "7930f12b426935dda41a57088b238978922b710de3024303a212e72535025d77"
+    },
+    {
+      "path": "js/00-foundation.js",
+      "bytes": 22938,
+      "sha256": "8bf7751da3d652c26b330f22dd153582407bb70a4b19f3fdc75bf130fc20505e"
+    },
+    {
+      "path": "js/10-curvature.js",
+      "bytes": 51548,
+      "sha256": "68ceeeb02311bcd186c97b08f6c0faa11e8e875d130e6932503c346d6bd1b44c"
+    },
+    {
+      "path": "js/100-transform-object-layers-zoom.js",
+      "bytes": 81618,
+      "sha256": "a5d51e537e3335f0e4fc61484804e6b40101b66366f87ca13120708e15866ead"
+    },
+    {
+      "path": "js/110-persistence.js",
+      "bytes": 78404,
+      "sha256": "c5845662529672ee6e0e65fb52c7d77d7265ea37147e883cb370ff1b789087a9"
+    },
+    {
+      "path": "js/120-export-color-picker.js",
+      "bytes": 64652,
+      "sha256": "8fed50b373b5b22176750f4173a935de1cfb2b8c69d72c2eadb54edc88b437b5"
+    },
+    {
+      "path": "js/130-menus-shortcuts-parser.js",
+      "bytes": 44450,
+      "sha256": "f8e089ad23c0220263cbbacd983e6eecae85ba57e23ee9b93534cbcb64f19157"
+    },
+    {
+      "path": "js/20-tools-snapping-text-shapes.js",
+      "bytes": 107218,
+      "sha256": "503968ccc07f373f8c067d1f4ef4c60ef2bbfe2e10d888de23b759743ad493eb"
+    },
+    {
+      "path": "js/30-pen-bezier.js",
+      "bytes": 51984,
+      "sha256": "4a12b5da526132a32de980bfb24a3066db29aad17570572b55645450eaf6bf52"
+    },
+    {
+      "path": "js/40-selection.js",
+      "bytes": 153666,
+      "sha256": "8a1aaa71dd9cce7126308ebcab446e15e96621dffa91778d0e87dd97d5ed4d63"
+    },
+    {
+      "path": "js/50-shape-builder.js",
+      "bytes": 116365,
+      "sha256": "49b0d942e12a4e276cdd62a3209c7e7894953324b61a978445853b2e1c5756a3"
+    },
+    {
+      "path": "js/60-perspective.js",
+      "bytes": 16478,
+      "sha256": "4125a4086919f7279e74fbc6922e1e8a01af4113e10bb8dec82edc397120c5e6"
+    },
+    {
+      "path": "js/70-pointer-events.js",
+      "bytes": 66941,
+      "sha256": "0651f3412cd8949d5b522b38f746f55a0dbf5f8c1fff3b86edbca095ed9a0005"
+    },
+    {
+      "path": "js/80-paints-appearance.js",
+      "bytes": 62041,
+      "sha256": "6a85c4ffda9c304f4353549f8d05dc4f64ccaf2ca806c2c68c092b18c8bc1396"
+    },
+    {
+      "path": "js/90-document-layout-groups.js",
+      "bytes": 290809,
+      "sha256": "340e877a5121948ef3167edc9d7de3dfd5e7fd44bff0753b66610ae4ea6355f3"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 224215,
+      "sha256": "44b0e3974f4f631cac86fbac2353994be8cafe6007d11abb97bc90628afeb0dc"
+    }
+  ],
+  "description": "Modular baseline with professional Layers panel v1: live SVG thumbnails and unified vector visibility/lock controls.",
+  "updated_at": "2026-08-17",
+  "key_file_sha256": {
+    "index.html": "62e83ae02d5845b00a06df5b12925ddfa709e012ebd01c78d6404f103c4b7dc5",
+    "styles.css": "1c1528e37239445a30993ddd0fc8d0f91ca75461d732f8f2bcc165d87cb25207",
+    "app.bundle.js": "60ed2285f52c409a76301f42f6d4e14f1237d0f5d2f56e707cc5a75336f7e9d6",
+    "js/100-transform-object-layers-zoom.js": "095061d474a5a6ab85ffb74be783022ebd0c47323ec19321774356ef2aeb2d0d"
+  },
+  "notes": [
+    "3D Revolve Expand 2D now resolves the current projected view: visible side faces are unioned into compound vector geometry and receive a multi-stop linear gradient sampled from the rendered 3D shading; visible caps remain separate vector shapes. Extrude expansion remains face-based.",
+    "v87 adds Object > Flatten Bitmap Colours with live palette/edge/noise/smoothing preview and flattened-copy output.",
+    "Bitmap Colour Flattener now traces cleaned palette regions into native editable SVG compound paths instead of creating a flattened raster copy.",
+    "Bitmap vectorizer adds edge-run line fitting/straightening and hides the source raster after SVG conversion.",
+    "Bitmap vectorizer v92 replaces jagged pixel-outline output with cubic Bezier curve fitting via Paper.js simplify; long straight runs collapse and curved boundaries use smooth handles.",
+    "Bitmap Colour Flattener dialog is viewport-bound with responsive preview, independently scrollable settings, and always-visible action footer.",
+    "v94 hard viewport containment for Bitmap Colour Flattener: fixed top/bottom insets, scrollable body, fixed footer, short-screen preview compression.",
+    "Clean release packaging: index.html loads only styles.css + app.bundle.js; archived versioned CSS/JS excluded.",
+    "v96 fixes the Bitmap Colour Flattener structurally: all settings are before the preview canvases, Edge Straightening is restored in the HTML, settings are sticky, and image preview dimensions cannot push controls below the viewport."
+  ]
+}
